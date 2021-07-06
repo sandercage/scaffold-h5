@@ -6,12 +6,17 @@ const IndexPage: React.FC = () => {
 
     const b = React.useMemo(() => {
         return a
-    }, [])
+    }, [a])
+
+    const c = React.useMemo(() => {
+        console.log(b)
+        return a
+    }, [a, b])
 
     React.useEffect(() => {
-        console.log(b)
+        console.log(c)
         setA(true)
-    }, [])
+    }, [c])
 
     return (
         <div>

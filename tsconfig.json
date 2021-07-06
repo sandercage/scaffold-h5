@@ -15,7 +15,14 @@
         },
         "allowSyntheticDefaultImports": true
     },
-    "include": ["mock/**/*", "src/**/*", "config/**/*", ".umirc.ts", "typings.d.ts"],
+    "include": [
+        "mock/**/*",
+        "src/**/*",
+        "./.eslintrc.js",
+        "config/**/*",
+        ".umirc.ts",
+        "typings.d.ts"
+    ],
     "exclude": [
         "node_modules",
         "lib",

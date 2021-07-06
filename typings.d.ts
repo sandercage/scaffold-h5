@@ -7,3 +7,9 @@ declare module '*.svg' {
     const url: string
     export default url
 }
+
+declare const classPre: string
+
+declare const primaryColor: string
+
+declare type BaseType = string | number | boolean
