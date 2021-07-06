@@ -1,0 +1,49 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "umi dev",
+        "build": "umi build",
+        "postinstall": "umi generate tmp",
+        "prettier": "prettier --write '**/*.{js,jsx,tsx,ts,less,md,json}'",
+        "test": "umi-test",
+        "test:coverage": "umi-test --coverage"
+    },
+    "gitHooks": {
+        "pre-commit": "lint-staged"
+    },
+    "lint-staged": {
+        "*.{js,jsx,less,md,json}": [
+            "prettier --write"
+        ],
+        "*.ts?(x)": [
+            "prettier --parser=typescript --write"
+        ]
+    },
+    "dependencies": {
+        "antd": "^4.16.6",
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2"
+    },
+    "devDependencies": {
+        "@types/react": "^17.0.0",
+        "@types/react-dom": "^17.0.0",
+        "@typescript-eslint/eslint-plugin": "^4.28.1",
+        "@typescript-eslint/parser": "^4.28.1",
+        "@umijs/test": "^3.5.2",
+        "@umijs/plugin-sass": "^1.1.1",
+        "@umijs/preset-react": "^1.8.14",
+        "eslint": "^7.30.0",
+        "eslint-config-umi": "^1.6.0",
+        "eslint-plugin-flowtype": "2.x",
+        "eslint-plugin-import": "2.x",
+        "eslint-plugin-jsx-a11y": "6.x",
+        "eslint-plugin-react": "7.x",
+        "eslint-plugin-react-hooks": "1.5.0",
+        "lint-staged": "^10.0.7",
+        "node-sass": "^6.0.1",
+        "prettier": "^2.3.2",
+        "typescript": "^4.3.5",
+        "umi": "^3.5.2",
+        "yorkie": "^2.0.0"
+    }
+}
