@@ -1,15 +1,6 @@
 import { defineConfig } from 'umi'
 import { API_BASE_URL, BASE_HOST, isDev } from './src/configs/env'
-import { globalVar } from './src/configs/system'
-
-const gennerSassVariables = (sassConsts: Record<string, string | number>) => {
-    const sassVariables: string[] = []
-    for (let varKey in sassConsts) {
-        sassVariables.push(`$${varKey}: ${sassConsts[varKey]};`)
-    }
-    return sassVariables.join('')
-}
-const sassVariables = gennerSassVariables(globalVar)
+import { globalVar, sassVariables } from './src/configs/system'
 
 export default defineConfig({
     title: 'scaffold-h5',
@@ -45,5 +36,4 @@ export default defineConfig({
         },
     },
     fastRefresh: {},
-    dva: false,
 })

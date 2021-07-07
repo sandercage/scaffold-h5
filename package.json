@@ -27,22 +27,23 @@
         "classnames": "^2.3.1",
         "dayjs": "^1.10.6",
         "react": "^17.0.2",
-        "react-dom": "^17.0.2"
+        "react-dom": "^17.0.2",
+        "umi": "^3.5.4"
     },
     "devDependencies": {
         "@types/classnames": "^2.3.1",
         "@types/react": "^17.0.13",
         "@types/react-dom": "^17.0.8",
         "@umijs/fabric": "^2.6.2",
+        "@umijs/plugin-model": "^2.6.1",
         "@umijs/plugin-sass": "^1.1.1",
-        "@umijs/preset-react": "^1.8.14",
+        "@umijs/plugin-initial-state": "^2.3.1",
         "@umijs/test": "^3.5.3",
         "cross-env": "^7.0.3",
         "lint-staged": "^11.0.0",
         "node-sass": "4.14.1",
         "prettier": "^2.3.2",
         "typescript": "^4.3.5",
-        "umi": "^3.5.3",
         "yorkie": "^2.0.0"
     }
 }
