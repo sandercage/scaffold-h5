@@ -26,6 +26,15 @@ module.exports = {
         'react/no-array-index-key': 'off',
         // 其他
         'eslint-comments/no-unlimited-disable': 'off',
+        '@typescript-eslint/no-namespace': 'off',
+        '@typescript-eslint/consistent-type-imports': 'off',
+        'no-restricted-syntax': 'off',
+        'guard-for-in': 'off',
+        'no-unused-expressions': ['error', { allowShortCircuit: true, allowTernary: true }],
+        '@typescript-eslint/no-unused-expressions': [
+            'error',
+            { allowShortCircuit: true, allowTernary: true },
+        ],
     },
     overrides: [
         {
