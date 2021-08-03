@@ -6,7 +6,7 @@
         "build-prd": "cross-env currentEnv=prd umi build",
         "mock": "cross-env currentEnv=dev umi dev",
         "ana": "cross-env ANALYZE=1 currentEnv=test umi build",
-        "postinstall": "umi generate tmp",
+        "postinstall": "node ./scripts/postinstall.js",
         "prettier": "prettier --write '**/*.{js,jsx,tsx,ts,less,md,json}'",
         "test": "umi-test",
         "test:coverage": "umi-test --coverage"

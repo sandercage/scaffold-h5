@@ -14,6 +14,7 @@ export default defineConfig({
     nodeModulesTransform: {
         type: 'none',
     },
+    ignoreMomentLocale: true,
     sass: {
         implementation: require('node-sass'),
         prependData: sassVariables,
